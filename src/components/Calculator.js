@@ -18,7 +18,7 @@ export default class Calculator extends React.Component {
             <li>x</li>
             <li>-</li>
             <li>+</li>
-            <li>+</li>
+            <li>=</li>
           </ul>
         </div>
         <div className="operand">
