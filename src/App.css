@@ -21,7 +21,7 @@ ul {
 
 .screen {
   background: #ddd;
-  padding: 0rem .6rem;
+  padding: 0 0.6rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -42,11 +42,10 @@ ul {
   grid-template-columns: 1fr;
   justify-content: center;
 }
-.operation ul li{
+
+.operation ul li {
   width: inherit;
 }
-
-
 
 .operand {
   background: rgba(0, 0, 0, 0.378);
@@ -70,4 +69,3 @@ ul {
 .operand ul li:nth-child(15) {
   font-weight: 900;
 }
-
