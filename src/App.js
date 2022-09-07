@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Calculator from './components/Calculator';
 
 class App extends Component {
   constructor(props) {
@@ -10,9 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h1>Welcome to Math Magician App</h1>
-        </div>
+        <Calculator />
       </div>
     );
   }
