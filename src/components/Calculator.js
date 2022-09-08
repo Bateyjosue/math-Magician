@@ -1,44 +1,58 @@
 import React from 'react';
+// import Operator from './Operator';
+// import Operand from './Operand';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  handleClick = (e) => {
+    const data = e.target.textContent;
+    const calculation = calculate(this.state, data);
+    this.setState(calculation);
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="calc">
         <div className="screen">
-          0
+          { next || operation || total || 0}
         </div>
         <div className="operation">
-          <ul>
-            <li>÷</li>
-            <li>x</li>
-            <li>-</li>
-            <li>+</li>
-            <li>=</li>
-          </ul>
+          <div>
+            <button type="button" onClick={this.handleClick} value="&divide;">÷</button>
+            <button type="button" onClick={this.handleClick} value="x">x</button>
+            <button type="button" onClick={this.handleClick} value="-">-</button>
+            <button type="button" onClick={this.handleClick} value="+">+</button>
+            <button type="button" onClick={this.handleClick} value="=">=</button>
+          </div>
         </div>
         <div className="operand">
-          <ul>
-            <li>AC</li>
-            <li>+/-</li>
-            <li>%</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>0</li>
-            <li />
-            <li>.</li>
-          </ul>
+          <div>
+            <button type="button" onClick={this.handleClick} value="AC">AC</button>
+            <button type="button" onClick={this.handleClick} value="&plusmn;">+/-</button>
+            <button type="button" onClick={this.handleClick} value="%">%</button>
+            <button type="button" onClick={this.handleClick} value="7">7</button>
+            <button type="button" onClick={this.handleClick} value="8">8</button>
+            <button type="button" onClick={this.handleClick} value="9">9</button>
+            <button type="button" onClick={this.handleClick} value="4">4</button>
+            <button type="button" onClick={this.handleClick} value="5">5</button>
+            <button type="button" onClick={this.handleClick} value="6">6</button>
+            <button type="button" onClick={this.handleClick} value="1">1</button>
+            <button type="button" onClick={this.handleClick} value="2">2</button>
+            <button type="button" onClick={this.handleClick} value="3">3</button>
+            <button type="button" onClick={this.handleClick} value="0">0</button>
+            <button type="button"> </button>
+            <button type="button" onClick={this.handleClick} value=".">.</button>
+          </div>
         </div>
       </div>
     );
