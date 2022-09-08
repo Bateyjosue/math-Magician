@@ -4,10 +4,12 @@ li {
   list-style: none;
 }
 
+
+
 .calc {
   width: 25%;
-  margin: 5rem auto;
-  height: 450px;
+  margin: 6rem auto;
+  height: 75vh;
   border: 1px rgba(0, 0, 0, 0.154) solid;
   box-shadow: 1px 1px 20px rgba(0, 0, 0);
   border-radius: 8px;
@@ -85,28 +87,27 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    overflow: hidden;
-    margin: 2rem auto;
-
-  }
-
   .calc {
     width: 85%;
+    height: 80vh;
+    max-width: 100%;
     margin: 5rem auto;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 600px) {
   .calc {
     width: 65%;
     margin: 5rem auto;
+    height: 80vh;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and  (min-width: 600px) and (max-width: 780px) {
   .calc {
     width: 55%;
     margin: 5rem auto;
+    height: 80vh;
+
   }
 }
