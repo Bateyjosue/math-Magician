@@ -17,6 +17,7 @@ li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50px 1fr;
+  place-content: center;
 }
 
 .screen {
@@ -81,4 +82,31 @@ li {
 
 .operand div button:nth-child(15) {
   font-weight: 900;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow: hidden;
+    margin: 2rem auto;
+
+  }
+
+  .calc {
+    width: 85%;
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .calc {
+    width: 65%;
+    margin: 5rem auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .calc {
+    width: 55%;
+    margin: 5rem auto;
+  }
 }
