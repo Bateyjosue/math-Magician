@@ -1,6 +1,4 @@
 import React from 'react';
-// import Operator from './Operator';
-// import Operand from './Operand';
 import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
