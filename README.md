@@ -3,7 +3,7 @@
 "Math magicians" is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.
 
 ## Screenshots
-![](./src/images/FireShot%20Capture%20001%20-%20Multi%20Device%20Website%20Mockup%20Generator%20-%20techsini.com.png)
+![](./src/images/mock2.png)
 
 ## Built With
 
