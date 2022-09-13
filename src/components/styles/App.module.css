@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(37, 50, 88);
+  color: white;
+  padding: 1rem;
+}
+
+a { 
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0rem 1rem;
+}
+
+a:nth-child(1),
+a:nth-child(2) {
+  border-right: 2px solid white;
+}
+@media screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+}
