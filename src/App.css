@@ -4,8 +4,6 @@ li {
   list-style: none;
 }
 
-
-
 .calc {
   width: 25%;
   margin: 6rem auto;
@@ -108,6 +106,5 @@ li {
     width: 55%;
     margin: 5rem auto;
     height: 80vh;
-
   }
 }
