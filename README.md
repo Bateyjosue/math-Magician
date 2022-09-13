@@ -9,6 +9,7 @@
 
 - React js
 - Create React App CRA
+- React-Router
 - HTML SCSS & VANILLA JAVASCRIPT
 
 ## Getting Started
@@ -17,13 +18,28 @@ To get a local copy up and running follow these simple example steps.
 
 > ## [Live Demo](https://super-cool-site-by-bateyjosue.netlify.app/)
 
-### Install
+# Setup
+[-] Clone the repository:
 
-- To Install First Either downlaod the zip files or clone the repository directly from the code buttons.
-  Then run the following command:
-  `npm install `
-  Then run the following command
-  ` npm Start`
+    $ git clone https://github.com/Bateyjosue/math_magician.git`
+
+[-] Navigate into the project folfer
+
+    $ cd math_magician
+
+[-] Install dependencies of the project using `npm` package manager
+
+    $ npm i || npm install
+
+[-] Run the project 
+
+    $ npm start || npm run start
+
+>Note: You can also run the development server or by running `npm dev` or `npm run dev` or  production server `npm build` or `npm run build`
+
+[-] After the server is runned open your brower and browse to the following address: 
+
+    localhost:3000
 
 ### Usage
 
@@ -34,7 +50,6 @@ To get a local copy up and running follow these simple example steps.
 
     run test using ```npm test```
 
-> _NOTE :- YOU MUST INSTALL ALL THE DEPENDICES FIRST AS ELUCIDATED IN THE INSTALLATION SECTION_
 
 # Authors
 
