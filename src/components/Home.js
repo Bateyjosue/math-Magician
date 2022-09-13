@@ -3,7 +3,7 @@ import stylus from './styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <h4 className={stylus.h4}>Welcome to our Page!</h4>
       <p className={stylus.pa}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quisquam,
@@ -17,6 +17,6 @@ export default function Home() {
         sequi minima non nihil repudiandae cum officia consectetur odit ratione quod
         expedita totam quo, tenetur vel minus quam! Esse, nisi odio! Ullam, enim est!
       </p>
-    </div>
+    </main>
   );
 }
