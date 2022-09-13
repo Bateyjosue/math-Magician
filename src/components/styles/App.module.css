@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: rgb(37, 50, 88);
+  background: rgba(37, 50, 88, 0.476);
   color: white;
   padding: 1rem;
 }
@@ -13,6 +13,12 @@ a {
   text-decoration: none;
   margin-right: 1rem;
   padding: 0 1rem;
+  font-size: 1.2em;
+  transition: all 400ms ease-in-out;
+}
+
+a:hover {
+  color: rgb(218, 51, 17);
 }
 
 a:nth-child(1),
