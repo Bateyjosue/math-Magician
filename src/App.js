@@ -15,7 +15,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <ma className="App">
         <header className={style.flex}>
           <h1>Math Magicians</h1>
           <nav>
@@ -29,7 +29,7 @@ class App extends Component {
           <Route path="calculator" element={<Calculator />} />
           <Route path="quote" element={<Quote />} />
         </Routes>
-      </div>
+      </ma>
     );
   }
 }

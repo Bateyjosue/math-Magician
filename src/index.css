@@ -3,4 +3,26 @@ body {
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+  background-image: url('https://wi.wallpapertip.com/wsimgs/45-452123_samsung-galaxy-j2-wallpaper-full-hd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+@media screen and (min-width: 768px) {
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+    background-image: url('https://i.pinimg.com/736x/c5/9a/8f/c59a8f036ce3dc4c0327edc48a6a4973.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    width: 50%;
+  }
 }

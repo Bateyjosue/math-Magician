@@ -5,9 +5,9 @@ li {
 }
 
 .calc {
-  width: 25%;
-  margin: 6rem auto;
-  height: 75vh;
+  width: 30%;
+  margin: 2rem auto;
+  height: 70vh;
   border: 1px rgba(0, 0, 0, 0.154) solid;
   box-shadow: 1px 1px 20px rgba(0, 0, 0);
   border-radius: 8px;
@@ -16,8 +16,9 @@ li {
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 60px 1fr;
   place-content: center;
+  
 }
 
 .screen {
@@ -28,6 +29,7 @@ li {
   justify-content: flex-end;
   grid-row: 1/2;
   grid-column: 1/5;
+  font-size: 1.5rem;
 }
 
 .operation {
@@ -50,10 +52,12 @@ li {
   border: none;
   cursor: pointer;
   width: 100%;
+  color: white;
+  font-size: 1.2em;
 }
 
 .operand {
-  background: rgba(0, 0, 0, 0.378);
+  background: rgba(41, 40, 40, 0.937);
   grid-row: 2/3;
   grid-column: 1/4;
 }
@@ -69,6 +73,8 @@ li {
 .operand div button {
   background: transparent;
   border: none;
+  color: white;
+  font-size: 1.2em;
 }
 
 .operand div button:nth-child(13) {
@@ -86,25 +92,25 @@ li {
 
 @media screen and (max-width: 480px) {
   .calc {
-    width: 85%;
+    width: 95%;
     height: 80vh;
     max-width: 100%;
-    margin: 5rem auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 600px) {
   .calc {
-    width: 65%;
-    margin: 5rem auto;
+    width: 75%;
+    margin: 0 auto;
     height: 80vh;
   }
 }
 
 @media screen and  (min-width: 600px) and (max-width: 780px) {
   .calc {
-    width: 55%;
-    margin: 5rem auto;
+    width: 65%;
+    margin: 0 auto;
     height: 80vh;
   }
 }
