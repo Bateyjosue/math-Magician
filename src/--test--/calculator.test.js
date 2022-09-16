@@ -1,5 +1,5 @@
-import calculate from './logic/calculate';
-import operate from './logic/operate';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
 
 describe('Addition Testing', () => {
   test('1 + 3 return 4', () => {
