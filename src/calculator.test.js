@@ -1,3 +1,4 @@
+import calculate from './logic/calculate';
 import operate from './logic/operate';
 
 describe('Addition Testing', () => {
@@ -25,8 +26,6 @@ describe('Modulus Testing', () => {
     expect(operate(12, 6, '%')).toBe('0');
   });
 });
-
-import calculate from '../logic/calculate';
 
 describe('Test calculate.js', () => {
   it('Test Operation Function', () => {
